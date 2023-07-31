@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif, Arial, Helvetica;
+}
+
+body {
+    background-color: #111;
+}
+
+.textColor {
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-bottom: solid 1px #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.img-logo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+    margin-left: 3rem;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 2.0rem;
+    position: relative;
+    list-style: none;
+}
+
+#btn_mobile {
+    display: none;
+    width: 100px;
+    background-color: #666;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.box {
+    height: 100vh;
+}
+
+.presentation {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    font-size: 2rem;
+    margin-top: 20vh;
+}
+
+.presentation h1 {
+    margin: 1rem;
+}
+
+#img-main {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.download_CV {
+    width: 250px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    background-color: #666;
+    border-radius: 150px;
+
+}
+
+.download_CV a {
+    display: block;
+    padding: 30px 20px;
+}
+
+
+.ability {
+    display: flex;
+    align-items: center;
+}
+
+.logo-type {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.inv {
+    display: none;
+}
+
+.option {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.arrow {
+    height: 200px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.arrow2 {
+    transform: rotate(180deg);
+}
+
+.projects {
+    height: 100%;
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects img {
+    width: 700px;
+    height: 350px;
+    margin: 20px;
+}
+
+.text {
+    font-size: 1.5rem;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.projectImages:hover {
+    transform: scale(1.1, 1.2);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    border-top: solid 1px #666;
+    height: 10vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.socialMidia {
+    padding: 20px;
+    margin: 20px;
+}
+
+svg {
+    fill: #fff;
+    height: 3em;
+}
+
+@media screen and (max-width:1020px) {
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .projectImages {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 100px;
+    }
+
+    .text {
+        width: 80%;
+        height: 100px;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-logo {
+        width: 50px;
+    }
+
+    #btn_mobile {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        margin-top: 1vh;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.329);
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #nav.active .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .presentation {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 20vh;
+    }
+
+    .download_CV {
+        width: 150px;
+        border-radius: 25px;
+    }
+
+    .download_CV a {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .logo-type {
+        width: 100px;
+    }
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .inv p {
+        font-size: 1rem;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .projects img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .option {
+        width: 100%;
+    }
+
+    svg {
+        height: 1em;
+    }
+}
