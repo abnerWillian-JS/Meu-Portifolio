@@ -7,6 +7,7 @@
 
 body {
     background-color: #111;
+    overflow-x: hidden;
 }
 
 .textColor {
@@ -51,6 +52,9 @@ ul li {
     font-weight: 800;
     border-radius: 25px;
 }
+#btn_mobile:active{
+    transform: scale(0.9, 0.8);
+}
 
 a {
     text-decoration: none;
@@ -93,6 +97,10 @@ a {
     padding: 30px 20px;
 }
 
+.download_CV a:active{
+    background-color: #444;
+    border-radius: 150px;
+}
 
 .ability {
     display: flex;
@@ -109,13 +117,20 @@ a {
 }
 
 .option {
-    width: 900px;
+    width: 800px;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     font-size: 2rem;
+}
+
+.box-ability {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .arrow {
@@ -126,6 +141,9 @@ a {
 
 .arrow2 {
     transform: rotate(180deg);
+}
+.arrow:active{
+    width: 80px;
 }
 
 .projects {
@@ -151,7 +169,7 @@ a {
 }
 
 .projectImages:hover {
-    transform: scale(1.1, 1.2);
+    transform: scale(0.9, 0.8);
 }
 
 footer {
@@ -174,6 +192,24 @@ footer {
 svg {
     fill: #fff;
     height: 3em;
+}
+
+[data-animate] {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+[data-animate="right"] {
+    transform: translate(50px, 0);
+}
+
+[data-animate="left"] {
+    transform: translate(-50px, 0);
+}
+
+[data-animate].animation {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 @media screen and (max-width:1020px) {
@@ -254,6 +290,12 @@ svg {
         width: 50px;
         height: 50px;
     }
+    .arrow:active{
+        width: 40px;
+    }
+    .box-ability {
+        width: 95%;
+    }
 
     .inv p {
         font-size: 1rem;
@@ -275,4 +317,5 @@ svg {
     svg {
         height: 1em;
     }
+
 }
